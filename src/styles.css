@@ -81,7 +81,7 @@ h1 {
   menu button is clicked
 */
 .home-library-container {
-  display: block;
+  display: none;
   height: 100%;
   width: 65%;
   background-color: var(--primary-color);
@@ -90,7 +90,7 @@ h1 {
 }
 
 .toggle-display {
-  display: none;
+  display: block;
 }
 
 .sidebar-containers {
