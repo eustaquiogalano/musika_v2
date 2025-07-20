@@ -143,7 +143,7 @@ of contents: artist-song-album */
   height: auto;
   width: 100%;
   overflow-x: hidden;
-  background-color: yellowgreen;
+  background-color: var(--secondary-color);
 }
 
 .album-list,
