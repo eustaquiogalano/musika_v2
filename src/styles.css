@@ -140,7 +140,7 @@ main {
 /* these containers holds the list
 of contents: artist-song-album */
 .content-list-container {
-  height: auto;
+  height: 250px;
   width: 100%;
   overflow-x: hidden;
   background-color: var(--secondary-color);
@@ -153,6 +153,7 @@ of contents: artist-song-album */
 
 .list {
   display: flex;
+  gap: 0.5rem;
   flex-direction: row;
   overflow-x: scroll;
 }
