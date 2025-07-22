@@ -181,28 +181,6 @@ of contents: artist-song-album */
   background-color: var(--secondary-color);
 }
 
-.podcast-list-container {
-  /* background-color: blue; */
-}
-
-.song-list-container {
-  /* background-color: green; */
-}
-
-.album-list-container {
-  /* background-color: red; */
-}
-
-/* .album-list {
-  background-color: green;
-}
-.artist-list {
-  background-color: red;
-}
-.song-list {
-  background-color: blue;
-} */
-
 .list {
   display: flex;
   gap: 1rem;
