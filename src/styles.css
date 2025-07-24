@@ -177,11 +177,14 @@ main {
 /* these containers holds the list
 of contents: artist-song-album */
 .content-list-container {
-  padding: 0.25rem;
+  padding: 1rem;
   height: auto;
   width: 100%;
   overflow-x: hidden;
   background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .list {
@@ -192,8 +195,13 @@ of contents: artist-song-album */
 }
 
 .list img {
-  width: clamp(150px, 11.5vw, 300px);
-  height: clamp(150px, 11.5vw, 300px);
+  width: clamp(135px, 11.5vw, 300px);
+  height: clamp(135px, 11.5vw, 300px);
+}
+
+.artist-list img {
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* for 1024px screen wide and up*/
