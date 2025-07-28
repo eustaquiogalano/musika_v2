@@ -101,7 +101,7 @@ h1 {
 */
 .home-library-container {
   grid-area: home-library-container;
-  display: block;
+  display: none;
   height: 88vh;
   width: 70%;
   background-color: var(--primary-color);
@@ -245,6 +245,13 @@ of contents: artist-song-album */
 .artist-list img {
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* for 425px screen wide screen and up */
+@media (min-width: 425px) {
+  .home-library-container {
+    width: 250px;
+  }
 }
 
 /* for 1024px screen wide and up*/
