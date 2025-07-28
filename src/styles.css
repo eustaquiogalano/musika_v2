@@ -201,9 +201,18 @@ main {
   width: 100px;
   height: 100%;
   border: none;
-  border-radius: 3px;
-  color: var(--primary-color);
+  border-radius: 6px;
+  /* color: var(--primary-color); */
+  /* background-color: var(--font-color-white); */
+}
+
+.log-in {
   background-color: var(--font-color-white);
+}
+
+.sign-up {
+  background-color: var(--primary-color);
+  color: var(--font-color-white);
 }
 
 .main-mid {
