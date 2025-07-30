@@ -1,7 +1,13 @@
 import '@fontsource/kanit';
 import './styles.css';
-import { setUpClickEvents } from './scripts/events';
+import {
+  initSignUpButton,
+  initSubmitSignUpButton,
+  setUpClickEvents,
+} from './scripts/events';
 
 document.addEventListener('DOMContentLoaded', () => {
   setUpClickEvents();
+  initSignUpButton();
+  initSubmitSignUpButton();
 });
