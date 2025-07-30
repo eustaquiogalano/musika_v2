@@ -6,6 +6,7 @@
   --font-color-white: rgb(256, 256, 256);
   --green: rgb(29, 185, 84);
   --container-radius: 0.5rem;
+  --font-style-general: 'kanit';
 }
 
 * {
@@ -45,7 +46,7 @@ body {
 
 body {
   background-color: var(--primary-color);
-  font-family: 'Kanit';
+  font-family: var(--font-style-general);
   color: var(--font-color-white);
   padding: 0.25rem;
   display: grid;
@@ -229,7 +230,6 @@ main {
   background-color: var(--primary-color);
   padding: 1rem;
   border-radius: 6px;
-  gap: 0.5rem;
 }
 
 .sign-up-dialog-box div {
@@ -240,6 +240,17 @@ main {
   padding: 0.5rem;
   border-radius: 6px;
   border: none;
+  gap: 0.25rem;
+}
+
+.sign-up-dialog-box h3 {
+  font-size: 2rem;
+}
+
+.sign-up-dialog-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .sign-up-dialog-box input {
@@ -247,6 +258,18 @@ main {
   border: none;
   padding: 0.2rem;
   font-size: 1rem;
+}
+
+.sign-up-dialog-box button {
+  background-color: var(--tertiary-color);
+  margin-top: 1rem;
+  width: 100%;
+  align-self: center;
+  height: 35px;
+  font-size: 1rem;
+  font-family: var(--font-style-general);
+  color: var(--font-color-white);
+  cursor: pointer;
 }
 
 .main-mid {
