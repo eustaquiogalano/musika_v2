@@ -1,4 +1,6 @@
-export function validateSignUpSubmitButton() {}
+export function validateSignUpSubmitButton() {
+  // const username =
+}
 
 export function closeDialogBox() {
   document.querySelector('.sign-up-dialog-box').style.display = 'none';

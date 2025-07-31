@@ -1,14 +1,16 @@
 import { closeDialogBox, openDialogBox } from './validations';
 
 export function setUpClickEvents() {
+  // menu button
+  // responsible for opening the sidebar pop-up
   document.querySelector('#menu-button').addEventListener('click', () => {
     const sideBarPopup = document.querySelector('.side-bar-popup');
     sideBarPopup.classList.toggle('toggle-display');
   });
-}
 
-// This sign-up button is from the sign-up dialog box
-export function initSubmitSignUpButton() {
+  // submit button
+  // responsible for submitting the form and
+  // closing the sign-up dialog box
   document
     .querySelector('.sign-up-dialog-box button')
     .addEventListener('click', event => {
@@ -21,15 +23,12 @@ export function initSubmitSignUpButton() {
       // presentation of result to the user
       alert('You are registered');
     });
-}
 
-// This button is from the sign-up button from main header
-export function initSignUpButton() {
+  // sign-up button
+  // responsible for opening the dialog box for signing up
   document
     .querySelector('.log-sign-container .sign-up')
     .addEventListener('click', () => {
-      console.log('hehehe');
-
       openDialogBox();
     });
 }
