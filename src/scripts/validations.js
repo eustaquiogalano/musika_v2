@@ -1,5 +1,11 @@
-export function validateSignUpSubmitButton() {
-  // const username =
+export function validateEmail() {
+  const email = document.querySelector('#e-mail');
+
+  // if the value of the input is invalid
+  // show an error message
+  if (!email.checkValidity()) {
+    email.reportValidity();
+  }
 }
 
 export function closeDialogBox() {
