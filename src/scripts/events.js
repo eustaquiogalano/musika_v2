@@ -1,4 +1,4 @@
-import { closeDialogBox, openDialogBox } from './validations';
+import { closeDialogBox, openDialogBox, validateEmail } from './validations';
 
 export function setUpClickEvents() {
   // menu button
@@ -13,15 +13,13 @@ export function setUpClickEvents() {
   // closing the sign-up dialog box
   document
     .querySelector('.sign-up-dialog-box button')
-    .addEventListener('click', event => {
-      // stop the page from loading
-      event.preventDefault();
+    .addEventListener('click', () => {
+      const signUpForm = document.querySelector('#sign-up-form');
 
-      // closes the dialog box
-      closeDialogBox();
-
-      // presentation of result to the user
-      alert('You are registered');
+      if (signUpForm.checkValidity()) {
+        // closes the dialog box
+        closeDialogBox();
+      }
     });
 
   // sign-up button
@@ -31,4 +29,27 @@ export function setUpClickEvents() {
     .addEventListener('click', () => {
       openDialogBox();
     });
+}
+
+export function initInputEvents() {
+  document.querySelector('#e-mail').addEventListener('input', () => {
+    validateEmail();
+  });
+}
+
+export function initSubmitEvents() {
+  const signUpForm = document.querySelector('#sign-up-form');
+
+  signUpForm.addEventListener('submit', event => {
+    // soon to be deleted and be replaced by maybe
+    // direct code or a module to handle the
+    // submission of the data to the server,
+    // but for now we'll stick to preventDefault
+    // for practicing the form
+    event.preventDefault();
+
+    // Confirmation to the user that he/she is
+    // registered already
+    alert('You are registered!');
+  });
 }
