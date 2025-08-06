@@ -1,3 +1,4 @@
+import { clearSignUpInputs } from './input-utilities';
 import { closeDialogBox, openDialogBox, validateEmail } from './validations';
 
 export function setUpClickEvents() {
@@ -47,6 +48,10 @@ export function initSubmitEvents() {
     // but for now we'll stick to preventDefault
     // for practicing the form
     event.preventDefault();
+
+    // for now I will use a function to reset
+    // all the inputs after submitting the form
+    clearSignUpInputs();
 
     // Confirmation to the user that he/she is
     // registered already
