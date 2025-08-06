@@ -1,5 +1,10 @@
 import { clearSignUpInputs } from './input-utilities';
-import { closeDialogBox, openDialogBox, validateEmail } from './validations';
+import {
+  closeDialogBox,
+  openDialogBox,
+  validateEmail,
+  validatePassWord,
+} from './validations';
 
 export function setUpClickEvents() {
   // menu button
@@ -36,6 +41,10 @@ export function initInputEvents() {
   document.querySelector('#e-mail').addEventListener('input', () => {
     validateEmail();
   });
+
+  document.querySelector('#password').addEventListener('input', () => {
+    validatePassWord();
+  });
 }
 
 export function initSubmitEvents() {
@@ -49,6 +58,8 @@ export function initSubmitEvents() {
     // for practicing the form
     event.preventDefault();
 
+    // also soon to be deleted since reloading the page
+    // autmatically resets the form, but
     // for now I will use a function to reset
     // all the inputs after submitting the form
     clearSignUpInputs();

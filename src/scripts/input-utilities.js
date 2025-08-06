@@ -4,5 +4,5 @@ export function clearSignUpInputs() {
   document.querySelector('#last-name').value = '';
   document.querySelector('#birthdate').value = '';
   document.querySelector('#e-mail').value = '';
-  // document.querySelector('#').value = '';
+  document.querySelector('#password').value = '';
 }
