@@ -272,6 +272,12 @@ main {
   cursor: pointer;
 }
 
+.checkmark {
+  fill: var(--quaternary-color);
+  height: 16px;
+  width: 16px;
+}
+
 .main-mid {
   grid-area: main-mid;
   width: 100%;
