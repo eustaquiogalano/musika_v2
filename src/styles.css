@@ -219,20 +219,21 @@ main {
   color: var(--font-color-white);
 }
 
-.sign-up-dialog-box {
+.sign-up-dialog-box,
+.log-in-dialog-box {
   height: auto;
   width: 300px;
   display: none;
   flex-direction: column;
   position: absolute;
   top: 100%;
-  /* display: none; */
   background-color: var(--primary-color);
   padding: 1rem;
   border-radius: 6px;
 }
 
-.sign-up-dialog-box div {
+.sign-up-dialog-box div,
+.log-in-dialog-box div {
   display: flex;
   flex-direction: column;
   color: var(--font-color-white);
@@ -243,24 +244,28 @@ main {
   gap: 0.25rem;
 }
 
-.sign-up-dialog-box h3 {
+.sign-up-dialog-box h3,
+.log-in-dialog-box h3 {
   font-size: 2rem;
 }
 
-.sign-up-dialog-box form {
+.sign-up-dialog-box form,
+.log-in-dialog-box form {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.sign-up-dialog-box input {
+.sign-up-dialog-box input,
+.log-in-dialog-box input {
   border-radius: 3px;
   border: none;
   padding: 0.2rem;
   font-size: 1rem;
 }
 
-.sign-up-dialog-box button {
+.sign-up-dialog-box button,
+.log-in-dialog-box button {
   background-color: var(--tertiary-color);
   margin-top: 1rem;
   width: 100%;
