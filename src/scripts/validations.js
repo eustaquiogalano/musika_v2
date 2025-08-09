@@ -44,12 +44,12 @@ export function validatePassWord() {
   toggleCheckmark(numberOfChars, checkmarkEightChar);
 }
 
-export function closeDialogBox() {
-  document.querySelector('.sign-up-dialog-box').style.display = 'none';
+export function closeDialogBox(dialogBox) {
+  dialogBox.style.display = 'none';
 }
 
-export function openDialogBox() {
-  document.querySelector('.sign-up-dialog-box').style.display = 'flex';
+export function openDialogBox(dialogBox) {
+  dialogBox.style.display = 'flex';
 }
 
 // private function for toggling green and gray color
